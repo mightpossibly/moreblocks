@@ -40,8 +40,8 @@ function stairsplus:register_all(modname, subname, recipeitem, fields)
 	self:register_stair(modname, subname, recipeitem, fields)
 	self:register_slab(modname, subname, recipeitem, fields)
 	self:register_slope(modname, subname, recipeitem, fields)
-	self:register_panel(modname, subname, recipeitem, fields)
-	self:register_micro(modname, subname, recipeitem, fields)
+--	self:register_panel(modname, subname, recipeitem, fields)
+--	self:register_micro(modname, subname, recipeitem, fields)
 end
 
 function stairsplus:register_alias_all(modname_old, subname_old, modname_new, subname_new)

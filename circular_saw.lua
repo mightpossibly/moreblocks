@@ -194,9 +194,9 @@ function circular_saw:update_inventory(pos, amount)
 	--	.. material .. " with " .. (amount) .. " microblocks.")
 
 	-- 0-7 microblocks may remain left-over:
-	inv:set_list("micro", {
-		modname .. ":micro_" .. material .. " " .. (amount % 8)
-	})
+--	inv:set_list("micro", {
+--		modname .. ":micro_" .. material .. " " .. (amount % 8)
+--	})
 	-- Display:
 	inv:set_list("output",
 		self:get_output_inv(modname, material, amount,
