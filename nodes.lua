@@ -38,7 +38,6 @@ end
 
 local deprecated = (" ("..S('Deprecated')..")")
 local nodes = {
---[[
 	["wood_tile"] = {
 		description = S("Wooden Tile"),
 		groups = {wood = 1, choppy = 2, oddly_breakable_by_hand = 2, flammable = 3},
@@ -53,6 +52,7 @@ local nodes = {
 		"default_wood.png^moreblocks_wood_tile.png^[transformR90"},
 		sounds = sound_wood,
 	},
+--[[
 	["wood_tile_flipped"] = {
 		description = S("Wooden Tile") .. deprecated,
 		tiles = {"default_wood.png^moreblocks_wood_tile.png^[transformR90",
@@ -120,6 +120,7 @@ local nodes = {
 		is_ground_content = false,
 		sounds = sound_stone,
 	},
+--]]
 	["coal_stone_bricks"] = {
 		description = S("Coal Stone Bricks"),
 		paramtype2 = "facedir",
@@ -136,7 +137,6 @@ local nodes = {
 		is_ground_content = false,
 		sounds = sound_stone,
 	},
---]]
 	["stone_tile"] = {
 		description = S("Stone Tile"),
 		groups = {stone = 1, cracky = 3},
@@ -184,6 +184,7 @@ local nodes = {
 		is_ground_content = false,
 		sounds = sound_stone,
 	},
+--]]
 	["plankstone"] = {
 		description = S("Plankstone"),
 		paramtype2 = "facedir",
@@ -193,6 +194,7 @@ local nodes = {
 		tiles = tile_tiles("plankstone"),
 		sounds = sound_stone,
 	},
+--[[
 	["iron_glass"] = {
 		description = S("Iron Glass"),
 		drawtype = "glasslike_framed_optional",
@@ -226,6 +228,7 @@ local nodes = {
 		groups = {cracky = 3, oddly_breakable_by_hand = 3},
 		sounds = sound_glass,
 	},
+--]]
 	["cactus_brick"] = {
 		description = S("Cactus Brick"),
 		paramtype2 = "facedir",
@@ -234,6 +237,7 @@ local nodes = {
 		is_ground_content = false,
 		sounds = sound_stone,
 	},
+--[[
 	["cactus_checker"] = {
 		description = S("Cactus Checker"),
 		groups = {stone = 1, cracky = 3},
@@ -246,6 +250,7 @@ local nodes = {
 		"default_stone.png^moreblocks_cactus_checker.png^[transformR90"},
 		sounds = sound_stone,
 	},
+--]]
 	["empty_shelf"] = {
 		description = S("Empty Shelf"),
 		paramtype2 = "facedir",
@@ -269,6 +274,7 @@ local nodes = {
 		is_ground_content = false,
 		sounds = sound_stone,
 	},
+--[[
 	["coal_checker"] = {
 		description = S("Coal Checker"),
 		tiles = {"default_stone.png^moreblocks_coal_checker.png",
@@ -475,6 +481,7 @@ local nodes = {
 		groups = {cracky = 3, oddly_breakable_by_hand = 3},
 		sounds = sound_glass,
 	},
+--]]
 	["clean_super_glow_glass"] = {
 		description = S("Clean Super Glow Glass"),
 		drawtype = "glasslike_framed_optional",
@@ -487,6 +494,7 @@ local nodes = {
 		groups = {cracky = 3, oddly_breakable_by_hand = 3},
 		sounds = sound_glass,
 	},
+--[[
 	["trap_super_glow_glass"] = {
 		description = S("Trap Super Glow Glass"),
 		drawtype = "glasslike_framed_optional",
@@ -515,6 +523,7 @@ local nodes = {
 		sounds = sound_glass,
 		no_stairs = true,
 	},
+--]]
 	["rope"] = {
 		description = S("Rope"),
 		drawtype = "signlike",
@@ -531,6 +540,7 @@ local nodes = {
 		sounds = sound_leaves,
 		no_stairs = true,
 	},
+--[[	
 	["copperpatina"] = {
 		description = S("Copper Patina Block"),
 		groups = {cracky = 1, level = 2},
