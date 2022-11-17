@@ -38,6 +38,7 @@ end
 
 local deprecated = (" ("..S('Deprecated')..")")
 local nodes = {
+--[[
 	["wood_tile"] = {
 		description = S("Wooden Tile"),
 		groups = {wood = 1, choppy = 2, oddly_breakable_by_hand = 2, flammable = 3},
@@ -135,12 +136,14 @@ local nodes = {
 		is_ground_content = false,
 		sounds = sound_stone,
 	},
+--]]
 	["stone_tile"] = {
 		description = S("Stone Tile"),
 		groups = {stone = 1, cracky = 3},
 		is_ground_content = false,
 		sounds = sound_stone,
 	},
+--[[
 	["split_stone_tile"] = {
 		description = S("Split Stone Tile"),
 		paramtype2 = "facedir",
@@ -534,6 +537,7 @@ local nodes = {
 		is_ground_content = false,
 		sounds = sound_metal,
 	},
+	--]]
 }
 
 for name, def in pairs(nodes) do
