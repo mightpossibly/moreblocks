@@ -1,3 +1,7 @@
+IMPORTANT NOTICE: This is a fork by mightpossibly of the mod 'moreblocks'. It is an altered version of the original code. The original authors have no affiliation with this repository, nor do they endorse it or its contents in any way.
+
+The original license must apply to this fork as well:
+
 # zlib license
 
 Copyright © 2011-2020 Hugo Locurcio and contributors
