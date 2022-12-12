@@ -23,8 +23,7 @@ circular_saw.known_nodes = {}
 -- How many microblocks does this shape at the output inventory cost:
 -- It may cause slight loss, but no gain.
 circular_saw.cost_in_microblocks = {
-	1, 1, 1, 1, 1, 1, 1, 2,
-	2, 3, 2, 4, 2, 4, 5, 6,
+	5, 6,
 	7, 1, 1, 2, 4, 6, 7, 8,
 	1, 2, 2, 3, 1, 1, 2, 4,
 	4, 2, 6, 7, 3, 7, 7, 4,
@@ -32,21 +31,6 @@ circular_saw.cost_in_microblocks = {
 }
 
 circular_saw.names = {
-	{"micro", "_1"},
-	{"panel", "_1"},
-	{"micro", "_2"},
-	{"panel", "_2"},
-	{"micro", "_4"},
-	{"panel", "_4"},
-	{"micro", ""},
-	{"panel", ""},
-
-	{"micro", "_12"},
-	{"panel", "_12"},
-	{"micro", "_14"},
-	{"panel", "_14"},
-	{"micro", "_15"},
-	{"panel", "_15"},
 	{"stair", "_outer"},
 	{"stair", ""},
 
@@ -190,8 +174,6 @@ function circular_saw:update_inventory(pos, amount)
 	if modname == "default" then
 		modname = "moreblocks"
 	end
-	-- print("circular_saw set to " .. modname .. " : "
-	--	.. material .. " with " .. (amount) .. " microblocks.")
 
 	-- 0-7 microblocks may remain left-over:
 --	inv:set_list("micro", {
